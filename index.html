@@ -1,0 +1,54 @@
+<html>
+<head>
+<style>
+.center-block {
+  top:50%;
+  left: 50%;
+  transform: translate3d(-50%,-50%, 0);
+  position: absolute;
+}
+.text {
+    position: absolute;
+    top: 50%; 
+    right: 50%;
+    transform: translate(50%,-50%);
+    text-transform: uppercase;
+    font-family: verdana;
+    font-size: 12em;
+    font-weight: 700;
+    color: #f5f5f5;
+    text-shadow: 1px 1px 1px #919191,
+        1px 2px 1px #919191,
+        1px 3px 1px #919191,
+        1px 4px 1px #919191,
+        1px 5px 1px #919191,
+        1px 6px 1px #919191,
+        1px 7px 1px #919191,
+        1px 8px 1px #919191,
+        1px 9px 1px #919191,
+        1px 10px 1px #919191,
+    1px 18px 6px rgba(16,16,16,0.4),
+    1px 22px 10px rgba(16,16,16,0.2),
+    1px 25px 35px rgba(16,16,16,0.2),
+    1px 30px 60px rgba(16,16,16,0.4);
+}
+</style>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.topology.min.js"></script>
+
+<body>
+<div id="ogulcan" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0;"></div>
+<div class="center-block"><a href="https://linktr.ee/ogulcanerduran"><span class="text">OGULCAN</span></a></div>
+<script>
+VANTA.TOPOLOGY({
+  el: "#ogulcan",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  scale: 1.00,
+  scaleMobile: 1.00
+})
+</script>
+</body>
+</html>
